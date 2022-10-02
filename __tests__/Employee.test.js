@@ -20,3 +20,9 @@ test("Can get name via getName()", () => {
   const emp = new Employee(1, name, "email");
   expect(emp.getName()).toBe(name);
 });
+
+test("Can get id via getId()", () => {
+    const id = 1;
+    const emp = new Employee(id, "Lou", "email");
+    expect(emp.getId()).toBe(id);
+})
