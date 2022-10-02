@@ -22,7 +22,19 @@ test("Can get name via getName()", () => {
 });
 
 test("Can get id via getId()", () => {
-    const id = 1;
-    const emp = new Employee(id, "Lou", "email");
-    expect(emp.getId()).toBe(id);
-})
+  const id = 1;
+  const emp = new Employee(id, "Lou", "email");
+  expect(emp.getId()).toBe(id);
+});
+
+test("Can get email via getEmail()", () => {
+  const email = `louis@email.com`;
+  const emp = new Employee(1, "lou", email);
+  expect(emp.getEmail()).toBe(email);
+});
+
+test(`getRole() returns "Employee"`, () => {
+  const test = `Employee`;
+  const emp = new Employee(1, `Lou`, `email`);
+  expect(emp.getRole()).toBe(test);
+});
