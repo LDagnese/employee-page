@@ -5,3 +5,9 @@ test("Can set the officeNumber of a Manager", () => {
   const manager = new Manager(1, `lou`, `email`, officeTest);
   expect(manager.officeNumber).toBe(officeTest);
 });
+
+test(`getRole() should return "Manager"`, () => {
+    const roleTest = "Manager";
+    const manager = new Manager(1,`lou`, `email`, 1);
+    expect(manager.getRole()).toBe(roleTest);
+})
