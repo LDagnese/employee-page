@@ -223,7 +223,7 @@ function app() {
 
   function buildHTML() {
     console.table(teamMembers)
-    // fs.writeFileSync(path.join(process.cwd(), `//dist//team.html`), generateHTML(teamMembers));
+    fs.writeFileSync(path.join(process.cwd(), `//dist//team.html`), generateHTML(teamMembers));
   }
 
   buildManager();

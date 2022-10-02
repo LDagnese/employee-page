@@ -8,7 +8,7 @@ const buildTeam = (team) => {
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">ID - ${manager.getId()}</li>
                 <li class="list-group-item">Email - <a href="mailto:${manager.getEmail()}"></a>${manager.getEmail()}</li>
-                <li class="list-group-item">Office Number - ${manager.getOfficeNumber()}</li>
+                <li class="list-group-item">Office # - ${manager.getOfficeNumber()}</li>
             </ul>
         </div>
     </div>
